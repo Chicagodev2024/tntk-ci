@@ -121,6 +121,7 @@ jobs:
           CD_DESTINATION: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: "manifest"
+          target-directory: "demoapp"
           destination-github-username: ${{ env.CD_DESTINATION_OWNER }}
           destination-repository-name: ${{ env.CD_PROJECT }}
           target-branch: ${{ env.ENVIRONMENT }}
